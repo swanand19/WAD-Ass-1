@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: rgb(219, 201, 161);
+            font-size: large;
+            font-family: cursive;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration:cyan;
+        } 
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <img src="logo.jpg" alt="Home Page" width = "100px" height="80px" style="margin-bottom: -7px;">
+            <a class = "home_page" href="main.html">Home</a>
+            <a class = "property" href="property.html">Property</a>
+            <a class = "about_page" href="about.html">About</a> 
+            <a class="contact" href="contact.html">Contact Us</a> 
+        </div>
+    </nav>
+    <div class="filter">
+        <form oninput="res.value = price.value">
+            <p>What location would you like to live in Nashik?</p>
+            <select name="location" class="opt">
+                <option class="opt" value="nashikrd">Nashik Road</option>
+                <option class="opt" value="satpur">Satpur</option>
+                <option class="opt" value="gangapur_rd">Gangapur Road</option>
+                <option class="opt" value="govind_nagar">Govind Nagar</option>
+                <option class="opt" value="deolali">Deolali Gaon</option>
+                <option class="opt" value="anandwalli">Anandwalli</option>
+                <option class="opt" value="indira_nagar">Indira Nagar</option>
+                <option class="opt" value="pathardi">Pathardi Phata</option>
+                <option class="opt" value="sinnar">Sinnar Taluka</option>
+            </select>
+            <p>Select the suitable price range : </p>
+            <input class="opt" type="checkbox" id="price1" name="price1" value="10L-20L">
+            <label class="opt" for="price1">10 Lakhs - 20 Lakhs</label><br>
+            <input class="opt" type="checkbox" id="price2" name="price2" value="20L-30L">
+            <label class="opt" for="price2">20 Lakhs - 30 Lakhs</label><br>
+            <input class="opt" type="checkbox" id="price3" name="price3" value="30L-50L">
+            <label class="opt" for="price3">30 Lakhs - 50 Lakhs</label><br>
+            <input class="opt" type="checkbox" id="price4" name="price4" value="50L-70L">
+            <label class="opt" for="price4">50 Lakhs - 70 Lakhs</label><br>
+            <input class="opt" type="checkbox" id="price5" name="price5" value="70L-1Cr">
+            <label class="opt" for="price5">70 Lakhs - 1 Crore</label><br>
+            <input class="opt" type="checkbox" id="price6" name="price6" value="1Cr">
+            <label class="opt" for="price1">Above 1 Crore</label><br>
+
+            <p>How many BHK(s) are you looking for?</p>
+            <input type="radio" name="BHK" id="1b" value="1bhk">
+            <label for="1b">1 BHK</label>
+            <input type="radio" name="BHK" id="2b" value="2bhk">
+            <label for="2b">2 BHK</label>
+            <input type="radio" name="BHK" id="3b" value="3bhk">
+            <label for="3b">3 BHK</label>
+            <input type="radio" name="BHK" id="4b" value="4bhk">
+            <label for="4b">4 BHK</label>
+
+            <p>Features you are looking for in the property :</p>
+            <input type="checkbox" id="f1" name="f1" value="f1">
+            <label for="f1">Kids playing area</label>
+            <input type="checkbox" id="f2" name="f2" value="f2">
+            <label for="f2">Gym</label>
+            <input type="checkbox" id="f3" name="f3" value="f3">
+            <label for="f3">24/7 Security</label>
+            <input type="checkbox" id="f4" name="f4" value="f4">
+            <label for="f4">CCTV Survelliance</label>
+            <input type="checkbox" id="f5" name="f5" value="f5">
+            <label for="f5">Parking</label>
+            <input type="checkbox" id="f6" name="f6" value="f6">
+            <label for="f6">Clubhouse</label>
+            
+            <br><input class="submit" type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="footer" style="font-size: medium;">
+        <p>All trademarks, logos and names are properties of their respective owners. All Rights Reserved. © Copyright 2023 Trust-Estate Services Limited.</p>
+    </div>
+</body>
